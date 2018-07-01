@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+	<head>
+	<title> Snaaap </title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="app.js" type="text/javascript"></script>
+		<script src="controllers/maincontroller.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="styles/common.css" />
+
+	<link rel="stylesheet" href="styles/owl.carousel.css" type="text/css" media="all" />
+		<!-- font-awesome icons -->
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<div id='content' ng-app='snaaapApp' ng-controller='MainController'>
+			<div ng-include="'views/header.htm'"></div>
+			<div ng-include="'views/aboutus.htm'"></div>
+			<div ng-include="'views/why.htm'"></div>
+			<div ng-include="'views/ourteam.htm'"></div>
+
+			
+			<!-- Clients -->
+	<div class="clients-main " id="clients">
+		<div class="container">
+			<!-- Owl-Carousel -->
+			<div class=" col-md-4 clients-left";">
+				<h5 class="title-w3">Clients feedback</h5>
+				<p class="para-w3-agile">CLIENTS</p>
+				<div class="botton">
+					<a href="#" data-toggle="modal" data-target="#myModal4">Read More</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+			<div id="owl-demo" class="col-md-8 owl-carousel text-center clients-right" style="float: right;">
+				<div class="item g1">
+					<div class="agile-dish-caption">
+						<h4>Fresh Fruits Lab Pte</h4>
+						<span> Kelvin Tan,Strategist</span>
+					</div>
+					<img class="lazyOwl" src="assets/customer1.jpg" alt="" />
+					<div class="clearfix"></div>
+					<p class="para-w3-agile"><span class="fa fa-quote-left" aria-hidden="true"></span>Our team is excited to be part of this platform that offers us the capability to promote to new customers our innovative dinning concepts and products. </p>
+				</div>
+				<div class="item g1">
+					<div class="agile-dish-caption">
+						<h4>My Mango Dessert Bar Pte </h4>
+						<span>Darwin Koh, Director</span>
+					</div>
+					<img class="lazyOwl" src="assets/customer2.png" alt="" />
+					<div class="clearfix"></div>
+					<p class="para-w3-agile"><span class="fa fa-quote-left" aria-hidden="true"></span>Snaaap is an innovative application that rewards our customers every time they spend with us. We look forward to growing our business with Snaaap.</p>
+				</div>
+				<div class="item g1">
+					<div class="agile-dish-caption">
+						<h4>Infinity Links Pte</h4>
+						<span>Wilson Neo</span>
+					</div>
+					<img class="lazyOwl" src="assets/customer3.png" alt="" />
+					<div class="clearfix"></div>
+					<p class="para-w3-agile"><span class="fa fa-quote-left" aria-hidden="true"></span>Snaaap is an important partner for Affinite to reach our customers with our offer of broad financial assurance solutions. We look forward to keeping our customers engaged on our platform powered by Snaaap.</p>
+				</div>
+				<div class="item g1">
+					<div class="agile-dish-caption">
+						<h4>Fresh Fruits Lab Pte</h4>
+						<span>Kelvin Tan, Strategist</span>
+					</div>
+					<img class="lazyOwl" src="assets/customer1.jpg" alt="" />
+					<div class="clearfix"></div>
+					<p class="para-w3-agile"><span class="fa fa-quote-left" aria-hidden="true"></span>Our team is excited to be part of this platform that offers us the capability to promote to new customers our innovative dinning concepts and products. </p>
+				</div>
+				<div class="item g1">
+					<div class="agile-dish-caption">
+						<h4>My Mango Dessert Bar Pte</h4>
+						<span>Darwin Koh, Director</span>
+					</div>
+					<img class="lazyOwl" src="assets/customer2.png" alt="" />
+					<div class="clearfix"></div>
+					<p class="para-w3-agile"><span class="fa fa-quote-left" aria-hidden="true"></span>Snaaap is an innovative application that rewards our customers every time they spend with us. We look forward to growing our business with Snaaap. </p>
+				</div>
+				<div class="item g1">
+					<div class="agile-dish-caption">
+						<h4>Infinity Links Pte</h4>
+						<span>Wilson Neo </span>
+					</div>
+					<img class="lazyOwl" src="assets/customer3.png" alt="" />
+					<div class="clearfix"></div>
+					<p class="para-w3-agile"><span class="fa fa-quote-left" aria-hidden="true"></span>Snaaap is an important partner for Affinite to reach our customers with our offer of broad financial assurance solutions. We look forward to keeping our customers engaged on our platform powered by Snaaap. </p>
+				</div>
+			</div>
+			<!--// Owl-Carousel -->
+		</div>
+	</div>
+	<!--// Clients -->
+
+<!--news-blog-->
+<div ng-include="'views/blog.htm'"> </div>
+
+<!--//news-blog-->
+
+
+	<!-- footer -->
+	<div ng-include="'views/footer.htm'"></div>
+		</div>
+<!--//footer-->
+
+
+
+
+	<!-- Owl-Carousel-JavaScript -->
+		<script type='text/javascript' src='controllers/jquery-2.2.3.min.js'></script>
+	<script src="controllers/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+				items: 2,
+				lazyLoad: true,
+				autoPlay: false,
+				pagination: true,
+			});
+		});
+	</script>
+	<!-- //Owl-Carousel-JavaScript -->
+	</body>
+</html>
